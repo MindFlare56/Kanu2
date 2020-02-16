@@ -13,11 +13,10 @@ namespace Kanu2.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+        [HttpGet][Route("Video")]
+        public ActionResult Video()
+        {            
+            return View("video");
         }
     }
 }

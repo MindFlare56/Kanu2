@@ -127,27 +127,57 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\brands.css" />
+    <Content Include="Content\Stylesheets\Vendors\brands.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\fontawesome-all.css" />
+    <Content Include="Content\Stylesheets\Vendors\fontawesome-all.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\fontawesome.css" />
+    <Content Include="Content\Stylesheets\Vendors\fontawesome.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\regular.css" />
+    <Content Include="Content\Stylesheets\Vendors\regular.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\solid.css" />
+    <Content Include="Content\Stylesheets\Vendors\solid.min.css" />
+    <Content Include="Content\Stylesheets\player.css" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap-theme.css" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap-theme.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap.css" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\svg-with-js.css" />
+    <Content Include="Content\Stylesheets\Vendors\svg-with-js.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\v4-shims.css" />
+    <Content Include="Content\Stylesheets\Vendors\v4-shims.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.4.1.js" />
-    <Content Include="Scripts\jquery-3.4.1.min.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.js" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Content\Stylesheets\Site.css" />
+    <Content Include="Scripts\Vendors\fontawesome\all.js" />
+    <Content Include="Scripts\Vendors\fontawesome\all.min.js" />
+    <Content Include="Scripts\Vendors\fontawesome\brands.js" />
+    <Content Include="Scripts\Vendors\fontawesome\brands.min.js" />
+    <Content Include="Scripts\Vendors\fontawesome\conflict-detection.js" />
+    <Content Include="Scripts\Vendors\fontawesome\conflict-detection.min.js" />
+    <Content Include="Scripts\Vendors\fontawesome\fontawesome.js" />
+    <Content Include="Scripts\Vendors\fontawesome\fontawesome.min.js" />
+    <Content Include="Scripts\Vendors\fontawesome\regular.js" />
+    <Content Include="Scripts\Vendors\fontawesome\regular.min.js" />
+    <Content Include="Scripts\Vendors\fontawesome\solid.js" />
+    <Content Include="Scripts\Vendors\fontawesome\solid.min.js" />
+    <Content Include="Scripts\Vendors\fontawesome\v4-shims.js" />
+    <Content Include="Scripts\Vendors\fontawesome\v4-shims.min.js" />
+    <Content Include="Scripts\player.js" />
+    <Content Include="Scripts\Vendors\bootstrap.js" />
+    <Content Include="Scripts\Vendors\bootstrap.min.js" />
+    <None Include="Scripts\Vendors\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Vendors\jquery-3.4.1.js" />
+    <Content Include="Scripts\Vendors\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\Vendors\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\Vendors\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\Vendors\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Vendors\jquery.validate.js" />
+    <Content Include="Scripts\Vendors\jquery.validate.min.js" />
+    <Content Include="Scripts\Vendors\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Vendors\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Vendors\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,9 +192,27 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Video.cshtml" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.eot" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\" />
+    <Folder Include="Content\Videos\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -172,13 +220,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap.min.css.map" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap.css.map" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap-theme.min.css.map" />
+    <Content Include="Content\Stylesheets\Vendors\bootstrap-theme.css.map" />
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\Vendors\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\Vendors\jquery-3.4.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

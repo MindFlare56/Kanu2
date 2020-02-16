@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Video";
+}
+
+<h2>Video</h2>
+<div id='player_wrapper'>
+    <video id='video_player'>
+        <source src='~/Content/Videos/killcomp.mp4' type='video/mp4'>
+    </video>
+    <div id='player_controls' class="row">
+        <span class="control-button">
+            <i class="fas fa-play" onclick="play_vid()" id="play_button"></i>
+        </span>
+        <span class="control-button">
+            <i class="fas fa-pause" onclick="pause_vid()" id="pause_button"></i>
+        </span>
+        <span class="control-button">
+            <i class="fas fa-stop" onclick="stop_vid()" id="stop_button"></i>
+        </span>       
+        <div class="volume-container">
+            <span class="control-button">
+                <i class="fas fa-volume-up" id="vol_img"></i>
+            </span>
+            <input class="control-range" type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+        </div>        
+    </div>
+</div>
+

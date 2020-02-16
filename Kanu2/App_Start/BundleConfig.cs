@@ -4,27 +4,42 @@ using System.Web.Optimization;
 namespace Kanu2
 {
     public class BundleConfig
-    {
-        // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
+    {        
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/Vendors/jquery-{version}.js"
+            ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
+                        "~/Scripts/Vendors/jquery.validate*"
+            ));
+          
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+                        "~/Scripts/Vendors/modernizr-*"
+            ));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/Vendors/bootstrap.js"
+            ));
+
+            bundles.Add(new ScriptBundle("~/bundles/fontawesome").Include(
+                      "~/Scripts/Vendors/fontawesome/all.js"
+            ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Stylesheets/Vendors/bootstrap.css",                      
+                      "~/Content/Stylesheets/player.css",
+                      "~/Content/Stylesheets/site.css"
+            ).Include("~/Content/Stylesheets/Vendors/fontawesome-all.min", new CssRewriteUrlTransform()));
+
+            bundles.Add(new StyleBundle("~/Player/css").Include(
+                      "~/Content/Stylesheets/player.css"
+            ));
+
+            bundles.Add(new ScriptBundle("~/Player/js").Include(
+                "~/Scripts/player.js"
+            ));
         }
     }
 }
