@@ -146,8 +146,12 @@
     <Content Include="Content\Stylesheets\Vendors\svg-with-js.min.css" />
     <Content Include="Content\Stylesheets\Vendors\v4-shims.css" />
     <Content Include="Content\Stylesheets\Vendors\v4-shims.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\video-js.css" />
+    <Content Include="Content\Stylesheets\Vendors\video-js.min.css" />
+    <Content Include="Content\Stylesheets\Vendors\video-js.swf" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\vjs.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Stylesheets\Site.css" />
     <Content Include="Scripts\Vendors\fontawesome\all.js" />
@@ -167,6 +171,10 @@
     <Content Include="Scripts\player.js" />
     <Content Include="Scripts\Vendors\bootstrap.js" />
     <Content Include="Scripts\Vendors\bootstrap.min.js" />
+    <Content Include="fonts\vjs.woff" />
+    <Content Include="fonts\vjs.ttf" />
+    <Content Include="fonts\vjs.eot" />
+    <Content Include="Content\Stylesheets\Vendors\video-js.less" />
     <None Include="Scripts\Vendors\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\Vendors\jquery-3.4.1.js" />
     <Content Include="Scripts\Vendors\jquery-3.4.1.min.js" />
@@ -178,6 +186,19 @@
     <Content Include="Scripts\Vendors\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\Vendors\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Vendors\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Vendors\video.dev.js" />
+    <Content Include="Scripts\Vendors\video.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\de.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\es.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\fr.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\it.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\ja.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\ko.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\nl.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\pt-BR.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\ru.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\uk.js" />
+    <Content Include="Scripts\Vendors\vjs-lang\zh.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

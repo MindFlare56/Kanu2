@@ -34,11 +34,14 @@ namespace Kanu2
             ).Include("~/Content/Stylesheets/Vendors/fontawesome-all.min", new CssRewriteUrlTransform()));
 
             bundles.Add(new StyleBundle("~/Player/css").Include(
-                      "~/Content/Stylesheets/player.css"
+                      "~/Content/Stylesheets/Vendors/player.css",
+                      "~/Content/Stylesheets/player.css",
+                      "~/Content/Stylesheets/Vendors/video-js.min.css"
             ));
 
             bundles.Add(new ScriptBundle("~/Player/js").Include(
-                "~/Scripts/player.js"
+                "~/Scripts/player.js",
+                "~/Scripts/Vendors/video.js"
             ));
         }
     }
