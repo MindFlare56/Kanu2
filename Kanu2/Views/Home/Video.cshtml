@@ -3,22 +3,30 @@
     ViewBag.Title = "Video";
 }
 
-<h2>Video</h2>
-<div id='player_wrapper'>   
-    <video id="my-player" width="600" height="300"
-           class="video-js"
-           controls
-           preload="auto"           
-           poster="~/Content/Images/player2.png"
-           data-setup='{}'>
-        <source src='~/Content/Videos/killcomp.mp4' type='video/mp4'>
-        <p class="vjs-no-js">
-            To view this video please enable JavaScript, and consider upgrading to a
-            web browser that
-            <a href="https://videojs.com/html5-video-support/" target="_blank">
-                supports HTML5 video
-            </a>
-        </p>
-    </video>   
-</div>
+@section Styles {
+    <link rel="Stylesheet" href="@Href("~/Content/Stylesheets/player.css")" />    
+}
 
+<h2>Video</h2>
+<div>
+    <div class="player">
+        CONTENT OVER VIDEO
+        <video class="video-background video1" no-controls autoplay src='~/Content/Videos/killcomp.mp4' poster="~/Content/Images/player2.png">
+            <p>
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                    supports HTML5 video
+                </a>
+            </p>
+        </video>
+    </div>
+
+    <div class="two">
+        <video class="video-background" no-controls autoplay src='~/Content/Videos/killcomp.mp4' poster="http://thumb.multicastmedia.com/thumbs/aid/w/h/t1351705158/1571585.jpg"></video> CONTENT OVER VIDEO
+    </div>    
+</div>  
+
+@section Scripts {
+    <script type="text/javascript" src="@Url.Content("~/Scripts/player.js")"></script>
+}

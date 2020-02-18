@@ -8,7 +8,7 @@ namespace Kanu2
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/Vendors/jquery-{version}.js"
+                        "~/Scripts/Vendors/jquery-3.4.1.min.js"
             ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -25,23 +25,15 @@ namespace Kanu2
 
             bundles.Add(new ScriptBundle("~/bundles/fontawesome").Include(
                       "~/Scripts/Vendors/fontawesome/all.js"
-            ));
+            ));            
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/Stylesheets/Vendors/bootstrap.css",                      
-                      "~/Content/Stylesheets/player.css",
+                      "~/Content/Stylesheets/Vendors/bootstrap.css",                                            
                       "~/Content/Stylesheets/site.css"
-            ).Include("~/Content/Stylesheets/Vendors/fontawesome-all.min", new CssRewriteUrlTransform()));
+            ).Include("~/Content/Stylesheets/Vendors/fontawesome-all.min", new CssRewriteUrlTransform()));            
 
-            bundles.Add(new StyleBundle("~/Player/css").Include(
-                      "~/Content/Stylesheets/Vendors/player.css",
-                      "~/Content/Stylesheets/player.css",
-                      "~/Content/Stylesheets/Vendors/video-js.min.css"
-            ));
-
-            bundles.Add(new ScriptBundle("~/Player/js").Include(
-                "~/Scripts/player.js",
-                "~/Scripts/Vendors/video.js"
+            bundles.Add(new ScriptBundle("~/player/js").Include(
+                "~/Scripts/player.js"                
             ));
         }
     }
