@@ -2,13 +2,19 @@
     filter:brightness(120%);
 }
 
-.player {
-    width: 90%;
-    height: 30vw;
+.player {    
     overflow: hidden;
     border: 1px solid black;
     margin-bottom: 40px;
     position: relative;
+}
+
+.hover {
+    display: none;
+}
+
+.tint-blue {
+    color: deepskyblue;
 }
 
 .two {

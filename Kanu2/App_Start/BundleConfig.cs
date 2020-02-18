@@ -33,7 +33,7 @@ namespace Kanu2
             ).Include("~/Content/Stylesheets/Vendors/fontawesome-all.min", new CssRewriteUrlTransform()));            
 
             bundles.Add(new ScriptBundle("~/player/js").Include(
-                "~/Scripts/player.js"                
+                "~/Scripts/player.js"
             ));
         }
     }

@@ -9,9 +9,13 @@
 
 <h2>Video</h2>
 <div>
-    <div class="player">
-        CONTENT OVER VIDEO
-        <video class="video-background video1" no-controls autoplay src='~/Content/Videos/killcomp.mp4' poster="~/Content/Images/player2.png">
+    <div class="player" style="width: 90%; height: 30vw;">        
+        <div class="controls">
+            <span class="overlay">Overlay text</span>
+            <span class="hover play"><i class="fas fa-play tint-blue"></i></span>
+            <span class="hover pause"><i class="fas fa-pause tint-blue"></i></span>                        
+        </div>
+        <video class="video-background video1" no-controls src='~/Content/Videos/killcomp.mp4' poster="~/Content/Images/player2.png">
             <p>
                 To view this video please enable JavaScript, and consider upgrading to a
                 web browser that
@@ -21,10 +25,6 @@
             </p>
         </video>
     </div>
-
-    <div class="two">
-        <video class="video-background" no-controls autoplay src='~/Content/Videos/killcomp.mp4' poster="http://thumb.multicastmedia.com/thumbs/aid/w/h/t1351705158/1571585.jpg"></video> CONTENT OVER VIDEO
-    </div>    
 </div>  
 
 @section Scripts {
