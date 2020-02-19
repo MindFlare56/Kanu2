@@ -4,6 +4,7 @@ let pauseButton;
 let hoverControls;
 let overlayControls;
 let player;
+let timeline;
 
 function scaleToFill() {
     $('video.video-background').each(function (index, videoTag) {
@@ -19,22 +20,25 @@ function scaleToFill() {
         $video.css('transform', 'scale(' + val + ',' + val + ')');
     });
 }
-
+//todo add timeline
 $(function () {
     scaleToFill();
     video = $('.video1').get(0);
     playButton = $('.play');
     pauseButton = $('.pause');
     hoverControls = $('.hover'); 
-    player = $('.player');            
+    player = $('.player');       
+    timeline = $('.timeline');
+    timeline.css('padding-bottom', '16px');
     player.one('click', () => {
+        timeline.css('display', 'block');
         videoToggle();
         //fadeInHoverControls();
         player.hover(function () {
             //fadeInHoverControls();
         });
         //todo replace with center of player something like that
-        player.mouseLeave(function () {
+        player.mouseleave(function () {
             //fadeOutHoverControls();
         })                 
     });        

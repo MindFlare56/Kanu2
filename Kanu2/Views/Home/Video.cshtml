@@ -9,11 +9,17 @@
 
 <h2>Video</h2>
 <div>
-    <div class="player" style="width: 90%; height: 400px;">        
+    <div class="player" style="width: 720px; height: 405px;">        
         <div class="controls">
-            <span class="overlay">Overlay text</span>
-            <span class="hover play"><i class="fas fa-play tint-blue"></i></span>
-            <span class="hover pause"><i class="fas fa-pause tint-blue"></i></span>                        
+            <div class="row">
+                <span class="overlay">Overlay text</span>
+                <span class="hover play"><i class="fas fa-play tint-blue"></i></span>
+                <span class="hover pause"><i class="fas fa-pause tint-blue"></i></span>
+                <div class="timeline">
+                    <div class="timeline__drag"></div>
+                    <div class="timeline__progress"></div>
+                </div>               
+            </div>            
         </div>        
         <video class="video-background video1" no-controls src='~/Content/Videos/killcomp.mp4' poster="~/Content/Images/player2.png">
             <p>
