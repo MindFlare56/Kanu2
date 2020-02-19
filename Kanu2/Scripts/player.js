@@ -26,20 +26,27 @@ $(function () {
     playButton = $('.play');
     pauseButton = $('.pause');
     hoverControls = $('.hover'); 
-    player = $('.player');        
+    player = $('.player');            
     player.one('click', () => {
-        fadeInHoverControls();
+        videoToggle();
+        //fadeInHoverControls();
         player.hover(function () {
-            fadeInHoverControls();
+            //fadeInHoverControls();
         });
         //todo replace with center of player something like that
         player.mouseLeave(function () {
-            fadeOutHoverControls();
-        })
-    });
+            //fadeOutHoverControls();
+        })                 
+    });        
     player.click(videoToggle);
-    playButton.click(play);
-    pauseButton.click(pause);
+    playButton.click(function (event) {
+        event.stopPropagation();
+        play();
+    });
+    pauseButton.click(function (event) {
+        event.stopPropagation();
+        pause();
+    });
     $('.video-background').on('loadeddata', scaleToFill);
     $(window).resize(function () {
         scaleToFill();
@@ -55,7 +62,7 @@ function videoToggle() {
 }
 
 function pause() {    
-    video.pause();
+    video.pause();    
     playButton.css('display', 'inline');
     pauseButton.css('display', 'none');
 }
@@ -68,22 +75,14 @@ function play() {
 
 function fadeInHoverControls() { 
     hoverControls.each((index) => {
+        //todo exept play or stop
         $(hoverControls.get(index)).fadeIn();        
-    });    
-    if (video.paused) {
-        pauseButton.css('display', 'none');
-    } else {
-        playButton.css('display', 'none');
-    }
+    });        
 }
 
 function fadeOutHoverControls() {
     hoverControls.each((index) => {
+        //todo exept play or stop
         $(hoverControls.get(index)).fadeOut();        
-    });     
-    if (video.paused) {
-        pauseButton.css('display', 'none');
-    } else {
-        playButton.css('display', 'none');
-    }
+    });         
 }

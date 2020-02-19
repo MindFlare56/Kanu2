@@ -6,11 +6,15 @@
     overflow: hidden;
     border: 1px solid black;
     margin-bottom: 40px;
-    position: relative;
+    position: relative;    
 }
 
 .hover {
     display: none;
+}
+
+.controls {
+    
 }
 
 .tint-blue {
